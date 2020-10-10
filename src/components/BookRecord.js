@@ -1,4 +1,5 @@
 import * as React from "react";
+import PropTypes from "prop-types";
 
 import "./BookRecord.css";
 
@@ -20,4 +21,10 @@ export const BookRecord = ({ imageLinks, title, description }) => {
       </div>
     </div>
   );
+};
+
+BookRecord.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  imageLinks: { thumbnail: PropTypes.string },
 };
