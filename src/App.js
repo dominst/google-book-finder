@@ -40,7 +40,10 @@ export default function App() {
       <div className="search_bar">
         <h3>
           Book finder -&nbsp;
-          <a href="https://www.github.com" target="blank">
+          <a
+            href="https://github.com/dominst/google-book-finder"
+            target="blank"
+          >
             source code
           </a>
         </h3>
