@@ -25,7 +25,7 @@ export default function App() {
         setBooks([]);
       }
     } catch (err) {
-      throw "Something went wrong.";
+      throw new Error("Something went wrong.");
     }
   }
 
