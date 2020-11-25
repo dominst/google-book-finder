@@ -108,7 +108,7 @@ export default function App() {
   );
 }
 
-const getFetchPath = (title, author, isbn) => {
+const getFetchPath = (title: string, author: string, isbn: string) => {
   let path = "https://www.googleapis.com/books/v1/volumes?q=";
 
   if (title) path += title;

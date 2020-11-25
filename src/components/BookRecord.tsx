@@ -10,7 +10,7 @@ export const BookRecord = ({ imageLinks, title, description }) => {
   const shortDescription = description
     ? description.slice(0, 90)
     : "No description provided.";
-  const thumbnail = (imageLinks && imageLinks.thumbnail) || defaultCover;
+  const thumbnail = imageLinks.thumbnail || defaultCover;
 
   return (
     <div className="bookrecord">
